@@ -1,0 +1,67 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*标题*/
+.jn_title{
+  clear: both;
+  width: 960px;
+  height: 14px;
+  color: #636363;
+  min-width: 960px;
+  margin: 20px auto;
+}
+
+/*  main    */
+.main {
+  clear: both;
+  width: 960px;
+  margin: 20px auto 50px;
+  .top{
+    margin-bottom: 10px;
+    position: relative;
+    background: #e43833;
+    >img{
+      width: 960px;
+      height: 72px;
+    }
+    .search{
+      position: absolute;
+      z-index: 20;
+      left: 654px;
+      top: 21px;
+      width: 265px;
+      border: 1px solid #eee;
+      height: 30px;
+      background: #fff;
+      border-radius: 5px;
+      padding-left: 1px;
+      input{
+        width: 200px;
+        background: #FFF url("../img/fdj.png") no-repeat 15px 10px;
+        padding-left: 43px;
+        height: 29px;
+        border: none;
+        float: left;
+        background-size: 5%;
+        font-size: 14px;
+        padding-top: 1px;
+        outline: none;
+      }
+      span{
+        width: 10px;
+        height: 10px;
+        display: block;
+        float: left;
+        margin-top: 8px;
+        cursor: pointer;
+        img{
+          width: 6px;
+          margin: 1px;
+        }
+      }
+    }
+  }
+}

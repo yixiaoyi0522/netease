@@ -1,0 +1,330 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    overflow-x: hidden;
+}
+ul,
+li {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*  header  */
+header {
+    clear: both;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    min-width: 1160px;
+}
+header .box {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    background-color: #323232;
+}
+header .box > a {
+    float: left;
+}
+header .box > a img {
+    margin: 6px 5px 0 30px;
+    width: 58px;
+    height: 18px;
+}
+header .box .nav {
+    float: left;
+}
+header .box .nav .nav_ul {
+    margin: 0;
+    padding: 0;
+}
+header .box .nav .nav_ul .nav_list {
+    position: relative;
+    float: left;
+}
+header .box .nav .nav_ul .zsj{
+    margin-right: 55px;
+}
+header .box .nav .nav_ul .zsj >img{
+    width: 44px;
+    height: 19px;
+    position: absolute;
+    top: 3px;
+    right: -30px;
+}
+header .box .nav .nav_ul .nav_list > a {
+    display: block;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB","Microsoft YaHei",SimHei,SimSun,sans-serif;
+    color: silver;
+    vertical-align: top;
+    margin-right: 10px;
+    font-weight: 700;
+}
+header .box .nav .nav_ul .current a{
+    color: #10b041;
+}
+header .box .nav .nav_ul .nav_list a:hover{
+    color: #10b041;
+}
+
+header .box .nav .nav_ul .nav_list .sqSub {
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 110px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    z-index: 100;
+}
+header .box .nav .nav_ul .nav_list .sqSub:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -16px;
+    left: 22px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: 6px solid #fff;
+    border-color: transparent transparent #fff;
+    border-width: 8px 6px;
+}
+header .box .nav .nav_ul .nav_list .sqSub > ul {
+    margin-top: 10px;
+}
+header .box .nav .nav_ul .nav_list .sqSub > ul li {
+    margin: 2px 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #636363;
+    white-space: nowrap;
+}
+header .box .nav .nav_ul .nav_list .sqSub > ul li :hover {
+    background: #e3fae1;
+}
+header .box .nav .nav_ul .nav_list .sqSub > ul li a {
+    padding: 0 20px;
+    display: block;
+    line-height: 30px;
+    color: #636363;
+}
+header .box .nav .nav_ul .nav_list .yd{
+    width: 150px;
+    height: 180px;
+}
+header .box .nav .nav_ul .sub:hover .sqSub{
+    display: block;
+}
+header .box .right {
+    float: left;
+    width: 300px;
+
+    position: absolute;
+    right: 10px;
+}
+header .box .right .search_small {
+    float: left;
+    border: 0;
+    width: 70px;
+    height: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    color: silver;
+}
+header .box .right .search_small .searchsmall_text {
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: -160px;
+    border: none;
+    height: 20px;
+    border-radius: 3px;
+    display: none;
+}
+
+header .box .right .search_small .iconfont{
+    z-index: 9999;
+}
+header .box .right .search_small .iconfont:hover .searchsmall_text{
+    display: block;
+    outline: none;
+}
+header .box .right .search_small > i {
+    float: left;
+    font-size: 18px;
+    color: silver;
+    font-style: normal;
+    padding: 0 10px;
+    font-weight: bold;
+}
+header .box .right .icon {
+    height: 30px;
+    line-height: 30px;
+}
+header .box .right .icon > i {
+    color: silver;
+    font-size: 16px;
+    padding: 0 10px;
+    font-style: normal;
+    float: left!important;
+    height: 30px;
+}
+header .box .right .icon > i a{
+    color: silver;
+    cursor: pointer;
+}
+
+
+
+
+/*  footer  */
+footer{
+    clear: both;
+    background: #323232;
+    padding-bottom: 25px;
+    min-width: 980px;
+}
+footer .topline{
+    height: 3px;
+    background: #25a851;
+    width: 100%;
+}
+footer .content{
+    margin: 0 auto;
+    width: 980px;
+}
+footer .content .nav{
+    margin-top: 36px;
+    margin-left: -15px;
+}
+footer .content .nav a:first-child{
+    border-left: solid 3px #25a851;
+    padding-left: 12px;
+}
+footer .content .nav a{
+    border-left: solid 2px #636363;
+    padding-left: 8px;
+    margin-right: 8px;
+    color: silver;
+    font-size: 14px;
+    font-weight: 700;
+}
+footer .content .info{
+    font-size: 12px;
+    color: #636363;
+    margin-top: 18px;
+}
+footer .content .footer_links{
+    line-height: 20px;
+    color: #636363;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0 0 70px;
+}
+footer .footer_links dt{
+    margin-left: -70px;
+    float: left;
+    font-weight: 700;
+    font-size: 14px;
+    color: #636363;
+}
+footer .footer_links dd{
+    float: left;
+    margin: 0;
+}
+footer .footer_links dd em{
+    font-style: normal;
+    margin: 0 4px;
+}
+footer .footer_links dd a{
+    white-space: nowrap;
+    color: #636363;
+    transition: all .2s ease-in-out;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer .footer_links dd a:hover{
+    color: silver;
+}
+footer dd,footer dl,footer dt{
+    margin: 0;
+}
+
+
+
+    /*  bottom  */
+.bottom{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    background: url("../img/qyer_layer_bg.png");
+    min-width: 1200px;
+}
+.bottom .box{
+    width: 70%;
+    margin: 0 auto;
+}
+.bottom .box img{
+    float: left;
+}
+.bottom .box a{
+    display: block;
+    float: left;
+    margin: 20px 0 0 10px;
+}
+.bottom .box span{
+    display: block;
+    float: left;
+    margin: 20px 0 0 10px;
+    font-size: 16px;
+    color: silver;
+}
+.bottom .box span:hover{
+    color: #ffffff;
+}
+.bottom .box .wb{
+    width: 100px;
+    height: 30px;
+    background: url("../img/qyer_layer_btn_2.png") no-repeat;
+    background-position: 0 0;
+    line-height: 70px;
+
+}
+.bottom .box .qq{
+    width: 100px;
+    height: 30px;
+    background: url("../img/qyer_layer_btn_2.png") no-repeat;
+    background-position: -100px 0;
+}
+.bottom .box .qy{
+    width: 110px;
+    height: 30px;
+    background: url("../img/qyer_layer_btn_2.png") no-repeat;
+    background-position: -200px 0;
+}
+.bottom span.button{
+    display: block;
+    background: url("../img/qyer_layer_close.png") no-repeat;
+    background-position: -62px 0;
+    width: 31px;
+    height: 29px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
